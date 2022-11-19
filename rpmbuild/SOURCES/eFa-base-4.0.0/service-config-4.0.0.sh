@@ -57,6 +57,8 @@ systemctl disable firewalld
 systemctl disable dovecot
 systemctl disable opendkim
 systemctl disable opendmarc
+# Causes high cpu usage and complains about things we have intentionally implemented
+systemctl disable setroubleshootd
 
 # Moved to build script to allow yum/cloud/remote based installs
 #systemctl disable sshd
